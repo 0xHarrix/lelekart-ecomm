@@ -1,0 +1,137 @@
+@font-face {
+  font-family: 'BlackHanSans';
+  src: url('../../public/BlackHanSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Bebas';
+  src: url('../../public/BebasNeue-Regular.ttf') format('truetype');
+  font-weight: 700;
+}
+
+.navbar {
+  background-color: black;
+  color: #000000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 24px;
+  font-family: 'BlackHanSans';
+  font-weight: bold;
+  color: #f02828;
+}
+
+.search-bar {
+  display: flex;
+  position: relative;
+}
+
+.navbar {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.navbar.dark-mode {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+
+.search-bar input {
+  padding: 14px;
+  border: none;
+  border-radius: 20px; 
+  outline: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  transition: box-shadow 0.3s, border-color 0.3s;
+  flex: 1;
+  font-size: 16px;
+  width: 400px;
+  background-color: white;
+}
+
+.search-bar input::placeholder {
+  color: #f02828;
+}
+
+.search-bar input:focus {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  border-color: #f02828; 
+}
+
+.search-btn {
+  background-color: #f02828;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 14px; 
+  margin-left: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.search-btn:hover {
+  background-color: #1f60c7;
+  transform: scale(1.05); 
+}
+
+.nav-links a {
+  font-family: 'Bebas';
+  font-size: larger;
+  color: #f02828;
+  text-decoration: none;
+  margin: 0 20px;
+  transition: 0.2s;
+}
+
+.nav-links a:hover {
+  color: #f0282862; /* Highlight color on hover */
+}
+
+.user-actions {
+  display: flex;
+  align-items: center;
+}
+
+.cart-button {
+  background-color: #f02828;
+  color: #fff;
+  border: none;
+  border-radius: 20px; /* Increased border-radius */
+  padding: 14px; /* Adjusted padding */
+  margin-left: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.cart-button span {
+  margin-left: 5px;
+}
+
+.cart-button:hover {
+  background-color: #f0282862; /* Darken color on hover */
+}
+
+/* Add responsive styles as needed */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .search-bar {
+    margin-top: 10px;
+    width: 100%; /* Take up full width */
+  }
+
+  .nav-links,
+  .user-actions {
+    margin-top: 10px;
+  }
+}
