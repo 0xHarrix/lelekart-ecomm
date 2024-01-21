@@ -14,8 +14,9 @@ function App() {
       <Navbar/>
       <DarkModeCarousel/>
       <Shoes/>
-      <Divider/>
+      <Divider borderColor='black.800'/>
       <Electronics/>
+      <Divider borderColor='black.800'/>
       <Footer/>
     </ChakraProvider>
     </div>

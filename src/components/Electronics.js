@@ -45,10 +45,10 @@ const productData = [
 const Electronics = () => {
   return (
     <Flex direction='column' align='center' mt='4'>
-      <Heading as='h2' size='xl' textAlign='center' color='white'>
+      <Heading as='h2' size='xl' textAlign='center' color='#3182ce'>
         Featured Electronics
       </Heading>
-      <Heading as='h2' size='l' mb='6' textAlign='center' color='red'>
+      <Heading as='h2' size='l' mb='6' textAlign='center' color='black'>
         Min 20% Off
       </Heading>
       <Flex className='container' maxW='1400px'>

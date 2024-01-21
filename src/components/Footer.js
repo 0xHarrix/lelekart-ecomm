@@ -4,7 +4,7 @@ import { FaFacebook, FaTwitter, FaInstagram, FaPinterest, FaYoutube } from 'reac
 
 const Footer = () => {
   return (
-    <Box bgColor='black' color='white' py='8'>
+    <Box bgColor='white' color='black' py='8' >
       <Flex direction='column' align='center'>
         <Flex direction='row' justify='space-around' w='100%' mb='4'>
           <Flex direction='column' align='center' mx='4'>

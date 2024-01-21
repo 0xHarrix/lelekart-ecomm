@@ -5,7 +5,7 @@ import { faShoppingCart, faMoon, faSun } from '@fortawesome/free-solid-svg-icons
 import '../styles/Navbar.css'; // Import your existing styles
 
 function Navbar() {
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(false);
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
